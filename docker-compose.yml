@@ -1,0 +1,13 @@
+version: '3'
+services:
+  client:
+    build: .
+    command: ["npm", "start"]
+    volumes:
+      - .:/usr/src/app
+      - sample-app_node_modules:/usr/src/app/node_modules
+    ports:
+      - 3000:3000
+  
+volumes: 
+  sample-app_node_modules: {}
