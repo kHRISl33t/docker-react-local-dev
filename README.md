@@ -6,6 +6,7 @@
 $ docker-compose build
 $ docker-compose run --rm client npm i
 $ docker-compose up client
+# open localhost:3000 on your browser
 
 # each time you install a package you need to run commands twice 
 $ docker-compose run --rm client npm i <PACKAGE>
